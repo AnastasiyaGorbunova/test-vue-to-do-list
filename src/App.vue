@@ -1,25 +1,25 @@
 <template>
   <div id="app">
-    <ToDoList />
+    <HelloWorld />
   </div>
 </template>
 
 <script>
-import ToDoList from './components/to-do-list.vue';
+import HelloWorld from './components/HelloWorld.vue';
 
 export default {
   name: 'App',
   components: {
-    ToDoList
+    HelloWorld
   }
 };
 </script>
 
 <style>
-#app {
+/* #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
-}
+} */
 </style>
