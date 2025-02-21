@@ -16,7 +16,7 @@
         </form>
                 
         <div class="wrap-textResult">
-            <button class="littleButton" id="myButton_equals">=</button> 
+            <button class="littleButtonResult" id="myButton_equals">=</button> 
             <h3 id="outputTextResult">___________</h3>
         </div>             
         </div>       
@@ -35,53 +35,57 @@
   </script>
   
   <style scoped>
-  .wrap-text {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+    .wrap-text {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        
+    }
+
+    .wrap-textResult {
+        display: flex;
+        gap: 3px;
+        align-items: center;
+    }
+
+    .keyboard {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 3px;
+    }
+
+    .wrap-littleButton {   
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        align-content: flex-start;
+        gap: 3px;
+    }
     
-}
+    .littleButton, .littleButtonResult {
+        font-size: 20px;
 
-.wrap-textResult {
-    display: flex;
-    gap: 3px;
-    align-items: center;
-}
+        width: 30px;
+        height: 30px;
+        background: #D9D9D9;
+        box-shadow: inset 2px 2px 5px 1px rgba(0, 0, 0, 0.25);
+        border: none;    
+    }
 
-.keyboard {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 3px;
-}
+    #outputTextResult {
+        /*border: none; */
+    }
 
-.wrap-littleButton {   
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    align-content: flex-start;
-    gap: 3px;
-}
-
-.littleButton {
-    font-size: 20px;
-
-    width: 30px;
-    height: 30px;
-    background: #D9D9D9;
-    box-shadow: inset 2px 2px 5px 1px rgba(0, 0, 0, 0.25);
-    border: none;    
-}
-
-#outputTextResult {
-    /*border: none; */
-}
-
-/*Hover */
-.littleButton:hover {
-    background-color: #283593;
-}
+    /*Hover */
+    .littleButton:hover, .littleButtonResult:hover {
+        background-color: #283593;
+    }
+    
+    .littleButton:focus {   
+        background: #283593;
+    }  
 
   </style>
   
