@@ -1,16 +1,19 @@
 <template>
   <div id="app">
     <ToDoList />
+    <MineCalculator />
   </div>
 </template>
 
 <script>
+import MineCalculator from './components/MineCalculator.vue';
 import ToDoList from './components/ToDoList.vue';
 
 export default {
   name: 'App',
   components: {
-    ToDoList
+    ToDoList,
+    MineCalculator
   }
 };
 </script>
