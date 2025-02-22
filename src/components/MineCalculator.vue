@@ -5,11 +5,23 @@
         <form id="myForm_one">
             <input type="number" name="argumentOne" placeholder="Введите первое число" v-model="argumentOne">
         </form>
-        <div class="wrap-littleButton">            
-            <button class="littleButton" id="myButton_division" @click ='operator="/"'>/</button> 
-            <button class="littleButton" id="myButton_multiplication">х</button> 
-            <button class="littleButton" id="myButton_subtraction">-</button>
-            <button class="littleButton" id="myButton_addition">+</button> 
+        <div class="form_radio_group">
+            <div class="form_radio_group-item">
+                <input id="radio-1" type="radio" name="radio" value="1" @click ='operator="/"'>
+                <label for="radio-1">/</label>
+            </div>
+            <div class="form_radio_group-item">
+                <input id="radio-2" type="radio" name="radio" value="2" @click ='operator="х"'>
+                <label for="radio-2">х</label>
+            </div>
+            <div class="form_radio_group-item">
+                <input id="radio-3" type="radio" name="radio" value="3" @click ='operator="-"'>
+                <label for="radio-3">-</label>
+            </div>
+            <div class="form_radio_group-item">
+                <input id="radio-4" type="radio" name="radio" value="4" @click ='operator="+"'>
+                <label for="radio-4">+</label>
+            </div>
         </div>
         <form id="myForm_two">
             <input type="number" name="argumentTwo" placeholder="Введите второе число" v-model="argumentTwo">
@@ -48,6 +60,15 @@
                 case '/':
                     this.result = this.argumentOne / this.argumentTwo;
                     break;
+                case 'х':
+                    this.result = this.argumentOne * this.argumentTwo;
+                    break;
+                case '-':
+                    this.result = this.argumentOne - this.argumentTwo;
+                    break;
+                case '+':
+                    this.result = this.argumentOne + this.argumentTwo;
+                    break;
                 default:                    
                     break;
             }
@@ -73,14 +94,7 @@
         align-items: center;
     }
 
-    .keyboard {
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        gap: 3px;
-    }
-
-    .wrap-littleButton {   
+    .form_radio_group {   
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -88,25 +102,36 @@
         align-content: flex-start;
         gap: 3px;
     }
-    
-    .littleButton, .littleButtonResult {
-        font-size: 20px;
 
+    .form_radio_group-item  {
+        font-size: 20px;
         width: 30px;
         height: 30px;
         background: #D9D9D9;
         box-shadow: inset 2px 2px 5px 1px rgba(0, 0, 0, 0.25);
-        border: none;    
+        border: none;           
     }
 
-    /*Hover */
-    .littleButton:hover, .littleButtonResult:hover {
-        background-color: #283593;
+    .form_radio_group label {
+        display: flex;
+        width: 30px;
+        height: 30px;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    .form_radio_group input[type=radio] {
+        display: none;
     }
     
-    .littleButton:focus {   
-        background: #283593;
-    }  
+    .form_radio_group input[type=radio]:checked + label {
+        background-color: #FFCDD2;
+    }
+
+    .form_radio_group label:hover {
+        background-color: #EF5350;
+    }
 
   </style>
   
