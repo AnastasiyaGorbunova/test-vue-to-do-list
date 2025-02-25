@@ -24,7 +24,7 @@
         const list = tempList? JSON.parse(tempList): [];
 
         return {
-            list,
+            list, //сокращённая запись list: list
             title: ""
         }
     },
