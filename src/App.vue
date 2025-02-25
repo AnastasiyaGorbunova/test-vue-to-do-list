@@ -1,28 +1,25 @@
 <template>
-  <div id="app">
+  <div>
     <ToDoList />
     <MineCalculator />
+    <NoteComments />    
   </div>
 </template>
 
 <script>
 import MineCalculator from './components/MineCalculator.vue';
 import ToDoList from './components/ToDoList.vue';
+import NoteComments from './components/NoteComments.vue';
 
 export default {
   name: 'App',
   components: {
     ToDoList,
-    MineCalculator
+    MineCalculator,
+    NoteComments
   }
 };
 </script>
 
 <style>
-/* #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-} */
 </style>

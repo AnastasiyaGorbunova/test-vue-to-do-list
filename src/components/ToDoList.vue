@@ -60,18 +60,6 @@
         gap:10px;
     }
 
-    .todo-element{
-        display: flex;
-        height: 30px;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    .wrap-btn-element {
-        display: flex;
-        gap: 5px;
-    }
-
     .active {
         background: #81C784;
     }

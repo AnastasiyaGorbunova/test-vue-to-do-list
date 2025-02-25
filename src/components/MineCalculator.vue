@@ -105,8 +105,6 @@
 
     .form_radio_group-item  {
         font-size: 20px;
-        width: 30px;
-        height: 30px;
         background: #D9D9D9;
         box-shadow: inset 2px 2px 5px 1px rgba(0, 0, 0, 0.25);
         border: none;           
