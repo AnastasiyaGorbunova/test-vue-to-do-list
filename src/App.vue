@@ -3,7 +3,8 @@
     <ToDoList />
     <MineCalculator />
     <NoteComments />   
-    <FetchWithUsers />       
+    <FetchWithUsers /> 
+    <FilterList/>     
   </div>
 </template>
 
@@ -12,6 +13,7 @@ import ToDoList from './components/ToDoList.vue';
 import MineCalculator from './components/MineCalculator.vue';
 import NoteComments from './components/NoteComments.vue';
 import FetchWithUsers from './components/FetchWithUsers.vue';
+import FilterList from './components/FilterList.vue';
 
 export default {
   name: 'App',
@@ -19,7 +21,8 @@ export default {
     ToDoList,
     MineCalculator,
     NoteComments,
-    FetchWithUsers
+    FetchWithUsers,
+    FilterList
   }
 };
 </script>
