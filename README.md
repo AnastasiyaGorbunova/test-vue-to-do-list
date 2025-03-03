@@ -5,7 +5,8 @@
 1. Задача 1 - ToDoList.vue
 2. Задача 2 - MineCalculator.vue
 3. Задача 3 - NoteComments.vue
-4. Задача 4 -
+4. Задача 4 - FetchWithUsers.vue
+5. Задача 5 - FilterList.vue
 
 ## Скачивание библиотек для работы приложения
 
