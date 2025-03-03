@@ -2,9 +2,9 @@
   <div>
     <ToDoList />
     <MineCalculator />
-    <NoteComments />   
-    <FetchWithUsers /> 
-    <FilterList/>     
+    <NoteComments />
+    <FetchWithUsers />
+    <FilterList />
   </div>
 </template>
 
@@ -27,5 +27,4 @@ export default {
 };
 </script>
 
-<style>
-</style>
+<style></style>
